@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ROG Strix Scope II X — 單品行銷頁 Demo（MonoPage.AI）</title>
+  <meta name="description" content="以 ROG Strix Scope II X 為範例的單品行銷一頁式網站 Demo，由 MonoPage.AI 自動生成。">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{
+      --bg: #0c1110;           /* very dark greenish */
+      --card: #111917;
+      --accent: #2c5f47;       /* moss green */
+      --accent-2: #6ee7b7;     /* mint highlight */
+      --text: #e6ebe8;         /* gray-white */
+      --muted: #a6b2ab;
+    }
+    .theme { background: radial-gradient(1000px 500px at 10% -10%, rgba(110,231,183,.08), transparent 60%), radial-gradient(800px 400px at 90% 0%, rgba(44,95,71,.25), transparent 60%), linear-gradient(180deg,var(--bg) 0%, #0a0f0e 100%); color: var(--text); }
+    .divider { background: linear-gradient(90deg, rgba(110,231,183,0.0), rgba(110,231,183,0.5), rgba(44,95,71,0.6), rgba(110,231,183,0.0)); height: 1px; }
+    .card { background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02)); border: 1px solid rgba(255,255,255,.08); border-radius: 16px; }
+    .glow { box-shadow: 0 0 18px rgba(110,231,183,.12), inset 0 0 18px rgba(44,95,71,.12); }
+    .sticky-nav { backdrop-filter: blur(10px); background: rgba(15, 22, 20, .6); border-bottom: 1px solid rgba(255,255,255,.08); }
+    .btn { transition: transform .15s ease, box-shadow .15s ease; }
+    .btn:hover { transform: translateY(-1px); box-shadow: 0 8px 32px rgba(110,231,183,.25); }
+    .angle { clip-path: polygon(0 0, 100% 0, 100% calc(100% - 48px), 0 100%); }
+    /* "elegant + tech" typography: use system + variable font fallback */
+    body { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", "PingFang TC", "Heiti TC", "Microsoft JhengHei", "Inter", "SF Pro Display", Arial, sans-serif; }
+    h1,h2,h3 { letter-spacing: .2px; }
+    .badge { background: linear-gradient(90deg, rgba(110,231,183,.25), rgba(44,95,71,.35)); color:#0b1512; }
+    /* canvas frame */
+    #aura { position:absolute; inset:0; width:100%; height:100%; display:block; }
+    .visual-wrap { position:relative; overflow:hidden; }
+  </style>
+</head>
+<body class="theme selection:bg-emerald-300 selection:text-black">
+  <!-- GA4 / Meta Pixel placeholders -->
+  <!-- GA4: 將 G-XXXXXXX 替換為你的測量ID
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script> -->
+
+  <!-- Meta Pixel: 將 1234567890 替換為你的 Pixel ID
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1234567890');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1234567890&ev=PageView&noscript=1"
+  /></noscript> -->
+
+  <!-- Nav -->
+  <header class="sticky top-0 sticky-nav z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#top" class="font-semibold tracking-wide">MonoPage.AI</a>
+      <nav class="hidden md:flex gap-8 text-sm text-[var(--muted)]">
+        <a href="#features" class="hover:text-emerald-300">核心亮點</a>
+        <a href="#quick" class="hover:text-emerald-300">快捷功能</a>
+        <a href="#compare" class="hover:text-emerald-300">比較</a>
+        <a href="#specs" class="hover:text-emerald-300">技術規格</a>
+        <a href="#faq" class="hover:text-emerald-300">FAQ</a>
+        <a href="#contact" class="hover:text-emerald-300">洽談</a>
+      </nav>
+      <a href="#cta" class="text-sm px-4 py-2 rounded-md border border-emerald-300/60 hover:bg-emerald-300 hover:text-black btn">立即試用</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="top" class="angle relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-10 items-center">
+      <div>
+        <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-emerald-300/90">
+          <span class="w-2 h-2 rounded-full bg-emerald-300"></span> Demo：ROG Strix Scope II X
+        </span>
+        <h1 class="mt-3 text-3xl sm:text-5xl font-extrabold leading-tight">
+          ROG Strix Scope II X — 一頁式銷售頁
+        </h1>
+        <p class="mt-5 text-[var(--muted)] text-lg">
+          參考官方內容節奏，示範 MonoPage.AI 如何以你的產品資料在數分鐘內自動生成可上線的專業行銷頁。
+        </p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a id="cta" href="#contact" class="px-6 py-3 rounded-md bg-emerald-300 text-black font-semibold btn">上傳產品資料</a>
+          <a href="#features" class="px-6 py-3 rounded-md border border-white/10 hover:border-white/30 btn">瞭解亮點</a>
+        </div>
+        <div class="mt-6 text-xs text-[var(--muted)]">* 本頁為示意 Demo，請以你自家產品資訊替換。</div>
+      </div>
+      <div class="relative visual-wrap rounded-xl card glow">
+        <canvas id="aura"></canvas>
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <div class="text-center p-8">
+            <div class="text-sm text-[var(--muted)] mb-2">產品視覺區（Canvas 燈效）</div>
+            <div class="h-48 rounded-md bg-white/5"></div>
+            <p class="mt-3 text-xs text-[var(--muted)]">可置入產品合成圖 / 3D 轉盤</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <h2 class="text-2xl sm:text-3xl font-bold">核心亮點</h2>
+      <div class="divider my-6"></div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-xl card glow">
+          <div class="text-emerald-300 font-semibold mb-1">可熱插拔 ROG NX V2</div>
+          <p class="text-[var(--muted)]">支援客製鍵軸、LED 透鏡強化 RGB、出廠潤滑，線性手感更一致（示意）。</p>
+        </div>
+        <div class="p-6 rounded-xl card glow">
+          <div class="text-emerald-300 font-semibold mb-1">聲學降噪設計</div>
+          <p class="text-[var(--muted)]">多層消音泡棉結構，降低空腔回音，鍵聲更沉穩（示意）。</p>
+        </div>
+        <div class="p-6 rounded-xl card glow">
+          <div class="text-emerald-300 font-semibold mb-1">PBT 二色成型鍵帽</div>
+          <p class="text-[var(--muted)]">耐用抗打油，字體清晰、手感紮實；附主題空白鍵（示意）。</p>
+        </div>
+      </div>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-xl card glow">
+          <div class="text-emerald-300 font-semibold mb-1">多媒體滾輪 & 模式鍵</div>
+          <p class="text-[var(--muted)]">音量、播放、燈效一鍵切換，遊戲/辦公輕鬆切換（示意）。</p>
+        </div>
+        <div class="p-6 rounded-xl card glow">
+          <div class="text-emerald-300 font-semibold mb-1">人體工學手托</div>
+          <p class="text-[var(--muted)]">三段腳架角度＋可拆手托，長時間輸入更舒適（示意）。</p>
+        </div>
+        <div class="p-6 rounded-xl card glow">
+          <div class="text-emerald-300 font-semibold mb-1">Aura 每鍵 RGB</div>
+          <p class="text-[var(--muted)]">支援同步與動態場景，打造個人化燈效（示意）。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK KEYS -->
+  <section id="quick">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="flex items-center justify-between gap-6 flex-wrap">
+        <h2 class="text-2xl sm:text-3xl font-bold">快捷功能（F1–F5 示意）</h2>
+        <span class="badge px-3 py-1 rounded text-xs">直播 / 錄製 工作流</span>
+      </div>
+      <div class="divider my-6"></div>
+      <div class="grid md:grid-cols-5 gap-4 text-sm">
+        <div class="p-4 rounded-lg card glow"><div class="font-semibold text-emerald-300">F1</div><div class="text-[var(--muted)]">Game Bar（Win+G）</div></div>
+        <div class="p-4 rounded-lg card glow"><div class="font-semibold text-emerald-300">F2</div><div class="text-[var(--muted)]">螢幕截圖（Win+Alt+PrtSc）</div></div>
+        <div class="p-4 rounded-lg card glow"><div class="font-semibold text-emerald-300">F3</div><div class="text-[var(--muted)]">錄製前 30 秒（Win+Alt+G）</div></div>
+        <div class="p-4 rounded-lg card glow"><div class="font-semibold text-emerald-300">F4</div><div class="text-[var(--muted)]">開始/暫停錄製（Win+Alt+R）</div></div>
+        <div class="p-4 rounded-lg card glow"><div class="font-semibold text-emerald-300">F5</div><div class="text-[var(--muted)]">麥克風靜音（Win+Alt+M）</div></div>
+      </div>
+      <p class="mt-4 text-xs text-[var(--muted)]">按鍵對應可於實機或後台自訂。此區為 Demo。</p>
+    </div>
+  </section>
+
+  <!-- COMPARISON -->
+  <section id="compare">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <h2 class="text-2xl sm:text-3xl font-bold">規格比較（示例）</h2>
+      <div class="divider my-6"></div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="p-6 rounded-xl card glow">
+          <h3 class="font-semibold mb-2">ROG Strix Scope II X</h3>
+          <ul class="space-y-2 text-sm text-[var(--muted)]">
+            <li>• 軸體：ROG NX V2（可熱插拔）</li>
+            <li>• 燈效：每鍵 RGB，Aura 同步</li>
+            <li>• 控制：多媒體滾輪、模式鍵</li>
+            <li>• 聲學：多層消音泡棉</li>
+            <li>• 鍵帽：PBT 二色成型</li>
+            <li>• 回報率：1000Hz</li>
+            <li>• 尺寸：436 × 129 × 37 mm</li>
+          </ul>
+        </div>
+        <div class="p-6 rounded-xl card">
+          <h3 class="font-semibold mb-2">上一代 / 他牌（示例）</h3>
+          <ul class="space-y-2 text-sm text-[var(--muted)]">
+            <li>• 軸體：傳統機械軸（固定）</li>
+            <li>• 燈效：區域/限定 RGB</li>
+            <li>• 控制：僅 Fn 組合鍵</li>
+            <li>• 聲學：無泡棉/回音較明顯</li>
+            <li>• 鍵帽：ABS 噴塗</li>
+            <li>• 回報率：125–500Hz</li>
+            <li>• 尺寸：相近（示例）</li>
+          </ul>
+        </div>
+      </div>
+      <p class="mt-3 text-xs text-[var(--muted)]">右側為示例比較欄，請替換成實際對比型號與數值。</p>
+    </div>
+  </section>
+
+  <!-- SPECS -->
+  <section id="specs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <h2 class="text-2xl sm:text-3xl font-bold">技術規格（示例）</h2>
+      <div class="divider my-6"></div>
+      <div class="grid md:grid-cols-2 gap-10">
+        <table class="w-full text-sm rounded-xl overflow-hidden">
+          <tbody class="divide-y divide-white/10">
+            <tr><td class="p-3 text-[var(--muted)]">型號</td><td class="p-3">ROG Strix Scope II X</td></tr>
+            <tr><td class="p-3 text-[var(--muted)]">軸體</td><td class="p-3">ROG NX V2（可熱插拔）</td></tr>
+            <tr><td class="p-3 text-[var(--muted)]">連接</td><td class="p-3">USB 2.0（Type‑C to Type‑A）</td></tr>
+            <tr><td class="p-3 text-[var(--muted)]">燈效</td><td class="p-3">每鍵 RGB；Aura 同步</td></tr>
+            <tr><td class="p-3 text-[var(--muted)]">巨集鍵</td><td class="p-3">全鍵可程式（軟體）</td></tr>
+            <tr><td class="p-3 text-[var(--muted)]">回報率</td><td class="p-3">1000 Hz</td></tr>
+            <tr><td class="p-3 text-[var(--muted)]">尺寸</td><td class="p-3">436 × 129 × 37 mm</td></tr>
+            <tr><td class="p-3 text-[var(--muted)]">軟體</td><td class="p-3">Armoury Crate（示意）</td></tr>
+            <tr><td class="p-3 text-[var(--muted)]">內容物</td><td class="p-3">鍵盤、手托、主題空白鍵、拔鍵/拔軸器、傳輸線、貼紙、說明書</td></tr>
+          </tbody>
+        </table>
+        <div class="p-6 rounded-xl card glow">
+          <h3 class="font-semibold text-emerald-300 mb-2">聲學 & 打感（示意）</h3>
+          <ul class="space-y-2 text-sm text-[var(--muted)]">
+            <li>• 驅動點：1.8 mm（示例）</li>
+            <li>• 初壓：40 gf、總壓：53 gf（示例）</li>
+            <li>• 多層泡棉：底部/上蓋/間隙填充</li>
+            <li>• 支援鍵帽/鍵軸替換微調手感</li>
+          </ul>
+          <div class="mt-4 text-xs text-[var(--muted)]">所有數值為示意，請以實際產品為準。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <h2 class="text-2xl sm:text-3xl font-bold">常見問題（FAQ）</h2>
+      <div class="divider my-6"></div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="p-6 rounded-xl card">
+          <h3 class="font-semibold mb-2">Q1：是否支援鍵軸更換？</h3>
+          <p class="text-sm text-[var(--muted)]">Demo 示意：是，支援可熱插拔軸體，可更換相容機械軸。</p>
+        </div>
+        <div class="p-6 rounded-xl card">
+          <h3 class="font-semibold mb-2">Q2：是否支援多裝置或無線？</h3>
+          <p class="text-sm text-[var(--muted)]">Demo 示意：此頁示例為 USB 連接；若需無線版本可另建型號頁。</p>
+        </div>
+        <div class="p-6 rounded-xl card">
+          <h3 class="font-semibold mb-2">Q3：保固與售後？</h3>
+          <p class="text-sm text-[var(--muted)]">Demo 示意：一年保固；支援鍵軸/鍵帽耗材選購。</p>
+        </div>
+        <div class="p-6 rounded-xl card">
+          <h3 class="font-semibold mb-2">Q4：燈效如何設定？</h3>
+          <p class="text-sm text-[var(--muted)]">Demo 示意：可透過軟體或快捷鍵切換場景、速度與顏色。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / FORM & PAY -->
+  <section id="contact">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <h2 class="text-2xl sm:text-3xl font-bold">洽談與試用</h2>
+      <div class="divider my-6"></div>
+      <div class="grid md:grid-cols-2 gap-10">
+        <form class="p-6 rounded-xl card glow space-y-4" onsubmit="event.preventDefault(); alert('已送出（Demo）');">
+          <div>
+            <label class="block text-sm mb-1">姓名</label>
+            <input required class="w-full rounded-md bg-white/5 border border-white/10 px-3 py-2 outline-none focus:border-emerald-300" placeholder="王小明">
+          </div>
+          <div>
+            <label class="block text-sm mb-1">Email</label>
+            <input type="email" required class="w-full rounded-md bg-white/5 border border-white/10 px-3 py-2 outline-none focus:border-emerald-300" placeholder="you@example.com">
+          </div>
+          <div>
+            <label class="block text-sm mb-1">你的產品與需求</label>
+            <textarea rows="4" class="w-full rounded-md bg-white/5 border border-white/10 px-3 py-2 outline-none focus:border-emerald-300" placeholder="型號 / 規格 / 目標客群 / 想加入的模組"></textarea>
+          </div>
+          <button class="px-6 py-3 rounded-md bg-emerald-300 text-black font-semibold btn" type="submit">送出需求</button>
+          <p class="text-xs text-[var(--muted)]">送出後我們將聯繫你並協助部署 Demo。</p>
+        </form>
+        <div class="space-y-5">
+          <div class="p-6 rounded-xl card">
+            <h3 class="font-semibold mb-2">快速下單（Demo 連結）</h3>
+            <div class="flex flex-wrap gap-3">
+              <a class="px-4 py-2 rounded-md border border-white/10 hover:border-white/30 btn" href="#" target="_blank" rel="noopener">信用卡/金流（外連）</a>
+              <a class="px-4 py-2 rounded-md border border-white/10 hover:border-white/30 btn" href="#" target="_blank" rel="noopener">Line Pay（外連）</a>
+              <a class="px-4 py-2 rounded-md border border-white/10 hover:border-white/30 btn" href="#" target="_blank" rel="noopener">銀行轉帳資訊</a>
+            </div>
+            <p class="text-xs text-[var(--muted)] mt-3">實作時可接第三方金流 API（TapPay、綠界、歐付寶等）。</p>
+          </div>
+          <div class="p-6 rounded-xl card">
+            <h3 class="font-semibold mb-2">追蹤與轉換</h3>
+            <p class="text-sm text-[var(--muted)]">本頁已預留 GA4 與 Meta Pixel 程式碼區塊，替換 ID 即可啟用瀏覽與購買轉換追蹤。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 text-sm text-[var(--muted)] flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>© <span id="year"></span> MonoPage.AI</div>
+      <div class="flex gap-6">
+        <a href="#features" class="hover:text-emerald-300">亮點</a>
+        <a href="#quick" class="hover:text-emerald-300">快捷</a>
+        <a href="#compare" class="hover:text-emerald-300">比較</a>
+        <a href="#specs" class="hover:text-emerald-300">規格</a>
+        <a href="#faq" class="hover:text-emerald-300">FAQ</a>
+        <a href="#contact" class="hover:text-emerald-300">洽談</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Canvas Aura Animation -->
+  <script>
+  (function(){
+    const canvas = document.getElementById('aura');
+    const ctx = canvas.getContext('2d');
+    let w, h, t = 0;
+    function resize(){
+      w = canvas.width = canvas.offsetWidth;
+      h = canvas.height = canvas.offsetHeight;
+    }
+    window.addEventListener('resize', resize, {passive:true});
+    resize();
+
+    function wave(x, y, seed){
+      return Math.sin((x*0.004 + seed) + Math.cos(y*0.004 - seed))*0.5 + 0.5;
+    }
+    function loop(){
+      t += 0.01;
+      const img = ctx.createImageData(w, h);
+      const data = img.data;
+      for(let y=0; y<h; y++){
+        for(let x=0; x<w; x++){
+          const n1 = wave(x, y, t);
+          const n2 = wave(x+100, y+50, -t*0.8);
+          const n = (n1*0.6 + n2*0.4);
+          const i = (y*w + x)*4;
+          // emerald + moss gradient
+          const r = 30 + n*30;
+          const g = 140 + n*75;
+          const b = 100 + n*40;
+          const a = 90 + n*80;
+          data[i]   = r;
+          data[i+1] = g;
+          data[i+2] = b;
+          data[i+3] = a; // alpha
+        }
+      }
+      ctx.putImageData(img, 0, 0);
+      requestAnimationFrame(loop);
+    }
+    loop();
+  })();
+  </script>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
